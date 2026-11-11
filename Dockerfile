@@ -1,5 +1,5 @@
 
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -11,6 +11,6 @@ WORKDIR /app
 RUN curl -fL --retry 3 \
     https://github.com/DiscordTrader/BotifyTrades/releases/download/v21.1.4/BotifyTrades-Linux \
     -o BotifyTrades-Linux && \
-    chmod +x BotifyTrades-Linux
+    chmod 755 BotifyTrades-Linux
 
 CMD ["./BotifyTrades-Linux"]
