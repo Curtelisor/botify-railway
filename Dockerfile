@@ -9,7 +9,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 RUN curl -fL --retry 3 \
-    https://github.com/DiscordTrader/BotifyTrades/releases/download/v21.1.4/BotifyTrades-Linux \
+    https://github.com/DiscordTrader/BotifyTrades/releases/download/v22.1.0/BotifyTrades-Linux \
     -o BotifyTrades-Linux && \
     chmod 755 BotifyTrades-Linux
 
